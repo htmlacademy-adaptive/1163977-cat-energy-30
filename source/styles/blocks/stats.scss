@@ -1,0 +1,37 @@
+/*
+.stats {}
+.stats__list {}
+*/
+.stats__item {
+  color: #000000;
+  text-align: center;
+  font-family: $primary-font;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.stats__decription {
+  color: #444444;
+  text-align: center;
+  font-family: $secondery-font;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.stats__result {
+  color: #000000;
+  text-align: center;
+  font-family: $primary-font;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+/*
+.stats__total {}
+*/
