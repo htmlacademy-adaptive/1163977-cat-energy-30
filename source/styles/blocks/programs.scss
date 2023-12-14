@@ -1,0 +1,39 @@
+/*
+.programs {}
+.programs__wrapper {}
+.programs__list {}
+.programs__item {
+  &--slim {
+  }
+  &--pro {
+  }
+}
+*/
+.programs__title {
+  color: #000000;
+  font-family: $primary-font;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.programs__desc {
+  color: #444444;
+  font-family: $secondery-font;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.programs__link {
+  color: #000000;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,33 @@
+/*
+.extra-product-card {}
+.extra-product-card__link-title {}
+*/
+.extra-product-card__title {
+  color: #222222;
+  text-align: center;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+/*
+.extra-product-card__info {}
+*/
+.extra-product-card__size,
+.extra-product-card__price {
+  color: #444444;
+  font-family: $secondery-font;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.extra-product-card__price {
+  text-align: right;
+}
+/*
+.extra-product-card__button {}
+*/

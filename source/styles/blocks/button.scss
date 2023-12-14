@@ -1,0 +1,41 @@
+.button {
+  color: #444444;
+  text-align: center;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &--primary {
+    color: #ffffff;
+    background-color: #68b738;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      color: rgba(#ffffff, 0.3);
+      background-color: #5eaa2f;
+    }
+  }
+
+  &--secondary {
+    color: #444444;
+    background-color: #f2f2f2;
+
+    &:hover {
+      color: #444444;
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: #444444;
+      background-color: #ebebeb;
+    }
+  }
+}
