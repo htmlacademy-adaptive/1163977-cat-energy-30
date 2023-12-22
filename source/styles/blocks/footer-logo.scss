@@ -1,4 +1,22 @@
-/*
-.footer-logo {}
-.footer-logo__image-text {}
-*/
+.footer-logo {
+  @include standart-transition;
+  display: block;
+  width: 128px;
+  height: 24px;
+  margin: 0 auto;
+  line-height: 0;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &__image-text {
+    width: 128px;
+    height: 24px;
+  }
+}

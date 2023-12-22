@@ -7,3 +7,23 @@
     src: $font-src;
   }
 }
+
+@mixin list-style-none {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin margin-wrapper {
+  margin-right: -20px;
+  margin-left: -20px;
+
+  @media (min-width: $breakpoints-tablet) and (max-width: $breakpoints-desktop) {
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+}
+
+@mixin standart-transition {
+  transition: all 0.3s ease;
+}

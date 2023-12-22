@@ -1,4 +1,24 @@
-/*
-.toggle {}
-.toggle__line {}
-*/
+.toggle {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+
+  &__line {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: $black;
+    margin-top: 2px;
+    margin-bottom: 6px;
+
+    &:last-child {
+      margin-bottom: 4px;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 .button {
-  color: #444444;
+  cursor: pointer;
+  color: $special-dark-grey;
   text-align: center;
   font-family: $primary-font;
   font-size: 16px;
@@ -8,34 +9,36 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
+  border: 0;
+  padding: 10px 15px;
 
   &--primary {
-    color: #ffffff;
-    background-color: #68b738;
+    color: $white;
+    background-color: $primary-color;
 
     &:hover {
-      color: #ffffff;
-      background-color: #5eaa2f;
+      color: $white;
+      background-color: $primary-color-active;
     }
 
     &:active {
-      color: rgba(#ffffff, 0.3);
-      background-color: #5eaa2f;
+      color: rgba($white, 0.3);
+      background-color: $primary-color-active;
     }
   }
 
   &--secondary {
-    color: #444444;
-    background-color: #f2f2f2;
+    color: $special-dark-grey;
+    background-color: $secondery-color;
 
     &:hover {
-      color: #444444;
-      background-color: #ebebeb;
+      color: $special-dark-grey;
+      background-color: $secondery-color-active;
     }
 
     &:active {
-      color: #444444;
-      background-color: #ebebeb;
+      color: $special-dark-grey;
+      background-color: $secondery-color-active;
     }
   }
 }

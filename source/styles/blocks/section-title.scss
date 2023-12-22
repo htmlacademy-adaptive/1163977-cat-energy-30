@@ -1,11 +1,52 @@
 .section-title {
-  color: #000000;
+  position: relative;
+  width: 100%;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 16px;
+    z-index: 1;
+    width: 100vw;
+    height: 2px;
+    background-color: $primary-color;
+  }
+
+  &::before {
+    right: calc(100% + 20px);
+
+    @media (min-width: $breakpoints-tablet) {
+      right: calc(100% + 30px);
+    }
+
+    @media (min-width: $breakpoints-desktop) {
+      right: calc(100% + 40px);
+    }
+  }
+
+  &::after {
+    left: 50%;
+  }
+}
+
+.section-title__inner {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  color: $primary-text-color;
   font-family: $primary-font;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+  background-color: $white;
+  padding-right: 20px;
+
+  @media (min-width: $breakpoints-tablet) {
+    br {
+      display: none;
+    }
+  }
 }
-/*
-.section-title__inner {}
-*/

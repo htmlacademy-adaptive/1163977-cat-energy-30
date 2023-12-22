@@ -1,39 +1,116 @@
-/*
-.programs {}
-.programs__wrapper {}
-.programs__list {}
+.programs__wrapper {
+  @include margin-wrapper;
+  padding-top: 20px;
+}
+
+.programs__list {
+  @include list-style-none;
+}
+
 .programs__item {
-  &--slim {
+  position: relative;
+  background-color: $secondery-color;
+  padding: 30px 33px 18px 20px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
   }
-  &--pro {
+
+  &--slim::before,
+  &--pro::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    z-index: 1;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $primary-color;
+  }
+
+  &--slim::after,
+  &--pro::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    display: block;
+  }
+
+  &--slim::after {
+    top: 21px;
+    left: 27px;
+    width: 36px;
+    height: 50px;
+    background-image: url("../../images/icons/stack.svg#cat-slim");
+  }
+
+  &--pro::after {
+    top: 35px;
+    left: 13px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../../images/icons/stack.svg#cat-pro");
   }
 }
-*/
+
 .programs__title {
-  color: #000000;
+  color: $primary-text-color;
   font-family: $primary-font;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
+  padding-left: 70px;
+  margin: 0;
 }
 
 .programs__desc {
-  color: #444444;
+  color: $secondery-text-color;
   font-family: $secondery-font;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
+  margin: 29px 0 19px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $spacer-line-color;
 }
 
 .programs__link {
-  color: #000000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: $primary-text-color;
   font-family: $primary-font;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    @include standart-transition;
+    content: "";
+    display: block;
+    width: 32px;
+    height: 10px;
+    margin-left: 15px;
+    background-image: url("../../images/icons/stack.svg#icon-arrow");
+    background-position-x: -8px;
+    background-repeat: no-repeat;
+    background-size: 27px 100%;
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:active::after {
+    background-position-x: 0;
+  }
 }

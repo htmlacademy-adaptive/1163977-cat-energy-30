@@ -1,13 +1,48 @@
-/*
-.gift {}
-.gift__image {}
-*/
+.gift {
+  position: relative;
+  height: 290px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../../images/cat-in-bag@1x.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/cat-in-bag@2x.jpg");
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba($primary-color, 0.85);
+  }
+}
+
+.gift__image {
+  position: relative;
+  z-index: 2;
+  width: 78px;
+  height: 80px;
+  margin-bottom: 48px;
+}
+
 .gift__text {
-  color: #ffffff;
+  position: relative;
+  z-index: 2;
+  color: $white;
   text-align: center;
   font-family: $secondery-font;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+  margin: 0;
 }

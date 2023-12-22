@@ -1,9 +1,45 @@
-/*
-.social {}
-.social__item {}
-.social__link {
-  &--vk {}
-  &--yt {}
-  &--tg {}
+.social {
+  @include list-style-none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-*/
+
+.social__item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.social__link {
+  @include standart-transition;
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: $special-dark-grey-2;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+    background-color: $primary-color;
+  }
+
+  &--vk {
+    mask-image: url("../../images/icons/stack.svg#social-icon-vk");
+  }
+
+  &--yt {
+    mask-image: url("../../images/icons/stack.svg#social-icon-yt");
+  }
+
+  &--tg {
+    mask-image: url("../../images/icons/stack.svg#social-icon-tg");
+  }
+}
