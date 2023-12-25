@@ -1,7 +1,14 @@
 /*
-.page {}
-.page__body {}
 .page__header {}
 .page__main {}
 .page__page-footer {}
 */
+.page,
+.page__body {
+  overflow-x: hidden;
+}
+
+.page__headline {
+  @include margin-wrapper;
+  margin-bottom: 39px;
+}

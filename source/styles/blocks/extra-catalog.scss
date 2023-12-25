@@ -1,7 +1,9 @@
 /*
 .extra-catalog {}
-.extra-catalog__title {}
-.extra-catalog__wrapper {}
 .extra-catalog__list {}
 .extra-catalog__gift {}
 */
+.extra-catalog__title,
+.extra-catalog__wrapper {
+  @include margin-wrapper;
+}

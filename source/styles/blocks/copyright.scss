@@ -1,14 +1,32 @@
-/*
-.copyright {}
-*/
+.copyright {
+  @include standart-transition;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .copyright__text {
-  color: #444444;
+  color: $secondery-text-color;
   font-family: $secondery-font;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
 }
-/*
-.copyright__icon {}
-*/
+
+.copyright__icon {
+  @include standart-transition;
+  display: block;
+  width: 27px;
+  height: 34px;
+  color: $special-dark-grey-2;
+
+  .copyright:hover &,
+  .copyright:focus & {
+    color: $primary-color;
+  }
+}
