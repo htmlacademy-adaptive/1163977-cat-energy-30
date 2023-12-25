@@ -20,17 +20,13 @@
 
 .copyright__icon {
   @include standart-transition;
+  display: block;
   width: 27px;
   height: 34px;
-  mask-image: url("../../images/icons/stack.svg#logo-academy");
-  background-color: $special-dark-grey-2;
+  color: $special-dark-grey-2;
 
-  :hover &,
-  :focus & {
-    background-color: $primary-color;
-  }
-
-  :active & {
-    background-color: $primary-color;
+  .copyright:hover &,
+  .copyright:focus & {
+    color: $primary-color;
   }
 }
