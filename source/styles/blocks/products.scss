@@ -1,4 +1,23 @@
-/*
-.products {}
-.products__item {}
-*/
+.products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (min-width: $breakpoints-tablet) {
+    gap: 60px;
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    gap: 80px 63px;
+  }
+}
+
+.products__item {
+  @media (min-width: $breakpoints-tablet) {
+    width: calc(50% - 30px);
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    width: 245px;
+  }
+}

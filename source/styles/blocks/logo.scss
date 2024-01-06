@@ -7,17 +7,19 @@
 
   &:hover,
   &:focus {
-    opacity: 0.8;
+    .logo__image-text,
+    .logo__image-image {
+      opacity: 0.8;
+    }
   }
 
   &:active {
-    opacity: 0.6;
+    .logo__image-text,
+    .logo__image-image {
+      opacity: 0.6;
+    }
   }
 }
-/*
-.logo__image-image {
-}
-*/
 
 .logo__image-text {
   @media (min-width: $breakpoints-tablet) {

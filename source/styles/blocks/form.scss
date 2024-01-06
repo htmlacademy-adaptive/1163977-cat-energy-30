@@ -1,29 +1,23 @@
 .form {
   @include margin-wrapper;
+
+  @media (min-width: $breakpoints-desktop) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .form__fieldset {
-  @include margin-wrapper;
-  padding-right: 20px;
-  padding-left: 20px;
+  @media (min-width: $breakpoints-desktop) {
+    width: 100%;
+  }
 
   &--info-cat {
     padding-bottom: 24px;
-    border-bottom: 1px solid $spacer-line-color;
-  }
 
-  &--programs {
-    padding-top: 20px;
-    padding-bottom: 19px;
-    margin-bottom: 26px;
-    border-bottom: 1px solid $spacer-line-color;
-  }
-
-  &--owner {
-    padding-bottom: 24px;
-
-    .form__legend {
-      margin-bottom: 35px;
+    @media (min-width: $breakpoints-desktop) {
+      width: calc(50% - 40px);
     }
   }
 
@@ -41,6 +35,41 @@
     .form__legend {
       margin-bottom: 34px;
     }
+  }
+}
+
+.form__fieldset--owner {
+  padding-bottom: 24px;
+
+  .form__legend {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .form__field {
+      width: calc(50% - 40px);
+    }
+  }
+}
+
+.form__fieldset--programs {
+  padding-top: 20px;
+  padding-bottom: 19px;
+  margin-bottom: 26px;
+  border-top: 1px solid $spacer-line-color;
+  border-bottom: 1px solid $spacer-line-color;
+
+  @media (min-width: $breakpoints-tablet) {
+    border: 1px solid $spacer-line-color;
+    padding: 23px 27px 27px;
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    width: calc(50% - 40px);
   }
 }
 
@@ -131,6 +160,7 @@
     border: 1px solid #e7e7e7;
     border-radius: 0;
     outline: none;
+    text-transform: uppercase;
 
     &:hover {
       border: 1px solid #cdcdcd;
@@ -196,6 +226,10 @@
     flex-direction: row;
     justify-content: flex-start;
   }
+
+  @media (min-width: $breakpoints-desktop) {
+    width: 100%;
+  }
 }
 
 .form__submit {
@@ -203,8 +237,14 @@
   margin-bottom: 21px;
 
   @media (min-width: $breakpoints-tablet) {
-    width: 50%;
+    width: calc(50% - 30px);
+    margin-right: 60px;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    width: calc(50% - 40px);
+    margin-right: 80px;
   }
 }
 

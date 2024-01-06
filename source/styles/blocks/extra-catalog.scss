@@ -1,9 +1,30 @@
 /*
 .extra-catalog {}
-.extra-catalog__list {}
 .extra-catalog__gift {}
 */
+
+.extra-catalog__list {
+  @include list-style-none;
+  margin-bottom: 35px;
+
+  @media (min-width: $breakpoints-tablet) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    flex-grow: 1;
+  }
+}
+
 .extra-catalog__title,
 .extra-catalog__wrapper {
   @include margin-wrapper;
+}
+
+.extra-catalog__wrapper {
+  @media (min-width: $breakpoints-desktop) {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 80px;
+  }
 }

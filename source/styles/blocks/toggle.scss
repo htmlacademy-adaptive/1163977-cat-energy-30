@@ -1,15 +1,13 @@
 .toggle {
-  position: absolute;
-  right: 20px;
-  top: 20px;
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 44px;
+  height: 44px;
   background-color: transparent;
   border: 0;
-  padding: 0;
+  padding: 10px;
 
   &__line {
+    @include standart-transition;
     display: block;
     height: 2px;
     width: 100%;
@@ -20,5 +18,19 @@
     &:last-child {
       margin-bottom: 4px;
     }
+  }
+}
+
+.toggle--open {
+  .toggle__line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .toggle__line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  .toggle__line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
   }
 }

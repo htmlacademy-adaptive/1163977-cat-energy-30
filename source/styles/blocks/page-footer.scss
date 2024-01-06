@@ -1,19 +1,39 @@
 .page-footer {
   background-color: $secondery-color;
   padding-bottom: 20px;
+
+  @media (min-width: $breakpoints-desktop) {
+    padding: 66px 0;
+  }
 }
 
 .page-footer__wrapper {
   @include margin-wrapper;
   padding-top: 40px;
+
+  @media (min-width: $breakpoints-desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
 }
 
 .page-footer__logo {
   margin: 0 auto 20px;
+
+  @media (min-width: $breakpoints-desktop) {
+    margin: 0;
+  }
 }
 
 .page-footer__social,
 .page-footer__copyright {
   padding: 20px 0;
   border-top: 1px solid $spacer-line-color;
+
+  @media (min-width: $breakpoints-desktop) {
+    padding: 0;
+    border: 0;
+  }
 }
