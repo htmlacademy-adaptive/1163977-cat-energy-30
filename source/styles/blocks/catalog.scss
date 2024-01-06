@@ -1,5 +1,10 @@
 /*
 .catalog {}
-.catalog__wrapper {}
-.catalog__list {}
 */
+.catalog__wrapper {
+  @include margin-wrapper;
+}
+
+.catalog__list {
+  @include list-style-none;
+}

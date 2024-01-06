@@ -1,7 +1,13 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  background: #ffffff;
+  background: $white;
   font-family: $primary-font;
   font-size: 18px;
   line-height: 27px;
@@ -17,10 +23,8 @@ img {
   object-fit: contain;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+picture {
+  line-height: 0;
 }
 
 fieldset {

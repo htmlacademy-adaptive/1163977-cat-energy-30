@@ -1,5 +1,23 @@
+.main-nav__toggle {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 2;
+
+  &--nojs {
+    display: none;
+  }
+
+  @media (min-width: $breakpoints-tablet) {
+    display: none;
+  }
+}
+
+.main-nav {
+  @media (min-width: $breakpoints-tablet) {
+    padding: 0 20px;
+  }
+}
 /*
-.main-nav {}
-.main-nav__toggle {}
 .main-nav__list {}
 */

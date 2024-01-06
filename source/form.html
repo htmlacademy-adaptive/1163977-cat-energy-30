@@ -26,21 +26,21 @@
     </a>
 
     <nav class="main-nav">
-      <button class="main-nav__toggle toggle" type="button">
+      <button class="main-nav__toggle toggle toggle--open main-nav__toggle--nojs" type="button">
+        <span class="toggle__line"></span>
+        <span class="toggle__line"></span>
+        <span class="toggle__line"></span>
         <span class="visually-hidden">Открыть меню</span>
-        <span class="toggle__line"></span>
-        <span class="toggle__line"></span>
-        <span class="toggle__line"></span>
       </button>
 
-      <ul class="main-nav__list main-menu">
-        <li class="main-menu__item main-menu__item--current">
+      <ul class="main-nav__list main-menu main-menu--open main-menu--nojs">
+        <li class="main-menu__item">
           <a class="main-menu__link" href="/">Главная</a>
         </li>
         <li class="main-menu__item">
           <a class="main-menu__link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="main-menu__item">
+        <li class="main-menu__item main-menu__item--current">
           <a class="main-menu__link" href="form.html">Подбор программы</a>
         </li>
       </ul>
@@ -48,7 +48,7 @@
   </header>
 
   <main class="page__main">
-    <div class="container">
+    <div class="container container--form">
       <div class="page__headline page-headline">
         <h1 class="page-headline__title page-title">Подбор программы</h1>
         <p class="page-headline__subtitle">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
@@ -138,9 +138,11 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__container contacts-detail">
-          <h3 class="contacts-detail__title">Приглашаем к сотрудничеству дилеров!</h3>
-          <p class="contacts-detail__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts-detail__address-city">Санкт-Петербург</span></p>
+        <div class="container">
+          <div class="contacts-detail">
+            <h3 class="contacts-detail__title">Приглашаем к сотрудничеству дилеров!</h3>
+            <p class="contacts-detail__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts-detail__address-city">Санкт-Петербург</span></p>
+          </div>
         </div>
         <div class="contacts__map">
           <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aba008c402bfdded6f831c2333f2c5cdff5d9cf45d4c38cdcc8630784ecec638c&amp;width=100%25&amp;height=362&amp;lang=ru_RU&amp;scroll=true"></script>
@@ -174,16 +176,16 @@
     </div>
   </footer>
   <script>
-    const $input = document.querySelectorAll("input");
-    const $form = document.querySelector(".form");
-    const $button = document.querySelector(".button");
+    const $input = document.querySelectorAll('input');
+    const $form = document.querySelector('.form');
+    const $button = document.querySelector('.button');
 
-    $button.addEventListener("click", () => validate());
+    $button.addEventListener('click', () => validate());
     const validate = () => {
       if (!$form.checkValidity()) {
         $input.forEach(input => {
           if (input.hasAttribute('required')) {
-            input.classList.add("form__control--invalid");
+            input.classList.add('form__control--invalid');
           }
         });
       }

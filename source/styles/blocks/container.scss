@@ -1,4 +1,5 @@
 .container {
+  position: relative;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -14,5 +15,11 @@
 
   @media (min-width: $breakpoints-desktop) {
     max-width: 1220px;
+  }
+
+  &--form {
+    @media (min-width: $breakpoints-tablet) and (max-width: $breakpoints-tablet-max) {
+      max-width: 628px;
+    }
   }
 }

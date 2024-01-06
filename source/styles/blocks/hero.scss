@@ -1,31 +1,111 @@
 .hero {
-  background: rgba(104, 183, 56, 0.85);
-}
-/*
-.hero__wrapper {}
-*/
-.hero__title {
-  color: #ffffff;
+  position: relative;
+  background:
+    linear-gradient(
+      180deg,
+      rgba($primary-color, 0.85) 0,
+      rgba($primary-color, 0.85) 352px,
+      rgba($white, 1) 352px,
+      rgba($white, 1) 100%
+    ),
+    url("../../images/index-bg-header@1x.webp");
+  background-repeat: no-repeat;
+  background-position-x: 60%;
+  background-size: cover;
 
   @media (min-width: $breakpoints-tablet) {
-    color: #000000;
+    background: $white;
+  }
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 27px 20px 0;
+
+  @media (min-width: $breakpoints-tablet) {
+    align-items: flex-start;
+    padding: 65px 30px 526px;
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    position: relative;
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 110px 0 184px;
+  }
+}
+
+.hero__title {
+  color: $white;
+  text-align: center;
+  margin: 0 0 25px;
+
+  @media (min-width: $breakpoints-tablet) {
+    position: relative;
+    z-index: 2;
+    color: $primary-text-color;
+    text-align: left;
+    margin: 0 0 40px;
+    padding-left: 90px;
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    padding-left: 80px;
   }
 }
 
 .hero__slogan {
-  color: #ffffff;
+  color: $white;
   font-family: $primary-font;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
+  margin: 0 0 29px;
 
   @media (min-width: $breakpoints-tablet) {
-    color: #000000;
+    position: relative;
+    z-index: 2;
+    color: $primary-text-color;
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 90px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    padding-left: 80px;
   }
 }
-/*
-.hero__image {}
-.hero__button {}
-*/
+
+.hero__image {
+  margin-bottom: 3px;
+
+  @media (min-width: $breakpoints-tablet) {
+    margin-bottom: 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    left: 447px;
+    bottom: 52px;
+  }
+}
+
+.hero__button {
+  @media (min-width: $breakpoints-tablet) {
+    position: relative;
+    z-index: 2;
+    margin-left: 90px;
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    margin-left: 80px;
+  }
+}

@@ -7,6 +7,9 @@
 
 /* BLOCKS */
 @import "./blocks/button.scss";
+@import "./blocks/toggle.scss";
+@import "./blocks/page-headline.scss";
+@import "./blocks/page-title.scss";
 @import "./blocks/catalog.scss";
 @import "./blocks/checkbox-elements.scss";
 @import "./blocks/compare-slider.scss";
@@ -29,8 +32,6 @@
 @import "./blocks/main-nav.scss";
 @import "./blocks/page.scss";
 @import "./blocks/page-footer.scss";
-@import "./blocks/page-headline.scss";
-@import "./blocks/page-title.scss";
 @import "./blocks/product-card.scss";
 @import "./blocks/products.scss";
 @import "./blocks/programs.scss";
@@ -38,4 +39,3 @@
 @import "./blocks/section-title.scss";
 @import "./blocks/social.scss";
 @import "./blocks/stats.scss";
-@import "./blocks/toggle.scss";

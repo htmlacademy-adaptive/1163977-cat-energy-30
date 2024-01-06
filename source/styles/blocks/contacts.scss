@@ -2,5 +2,9 @@
 .contacts {}
 .contacts__wrapper {}
 .contacts__container {}
-.contacts__map {}
 */
+.contacts__map iframe {
+  @media (min-width: $breakpoints-tablet) {
+    height: 400px;
+  }
+}

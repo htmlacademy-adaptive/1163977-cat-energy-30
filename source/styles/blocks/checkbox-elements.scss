@@ -1,4 +1,27 @@
-/*
-.checkbox-elements {}
-.checkbox-elements__item {}
-*/
+.checkbox-elements {
+  @media (min-width: $breakpoints-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (min-width: $breakpoints-desktop) {
+      gap: 30px 80px;
+    }
+  }
+}
+
+.checkbox-elements__item {
+  margin-bottom: 13px;
+
+  @media (min-width: $breakpoints-tablet) {
+    width: 50%;
+    padding-right: 30px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    width: 240px;
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+}

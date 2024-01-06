@@ -1,37 +1,111 @@
 /*
 .stats {}
-.stats__list {}
 */
+.stats__list {
+  @include list-style-none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 -16px;
+
+  @media (min-width: $breakpoints-tablet) {
+    margin: 0;
+  }
+}
+
 .stats__item {
-  color: #000000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 124px;
+  height: 56px;
+  color: $primary-text-color;
   text-align: center;
   font-family: $primary-font;
   font-size: 24px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  margin: 0 16px;
+
+  @media (min-width: $breakpoints-tablet) {
+    width: 162px;
+    height: 72px;
+    font-size: 30px;
+    line-height: 37px;
+    margin: 0;
+
+    &:first-child {
+      margin-right: 43px;
+
+      @media (min-width: $breakpoints-desktop) {
+        margin-right: 42px;
+      }
+    }
+  }
 }
 
 .stats__decription {
-  color: #444444;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: block;
+  width: 87px;
+  padding: 0 13px;
+  color: $secondery-text-color;
   text-align: center;
   font-family: $secondery-font;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 100%;
+  background-color: #eaeaea;
+
+  @media (min-width: $breakpoints-tablet) {
+    font-size: 14px;
+    line-height: 14px;
+    white-space: nowrap;
+    width: auto;
+    bottom: -7px;
+    padding: 0 8px;
+    background-color: $white;
+  }
 }
 
 .stats__result {
-  color: #000000;
+  color: $primary-text-color;
   text-align: center;
   font-family: $primary-font;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 34px 0 0;
+
+  @media (min-width: $breakpoints-tablet) {
+    text-align: right;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    margin-top: 55px;
+  }
 }
-/*
-.stats__total {}
-*/
+
+.stats__total {
+  @media (min-width: $breakpoints-tablet) {
+    display: block;
+    padding-top: 9px;
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    display: inline;
+    padding-top: 0;
+    padding-left: 63px;
+  }
+}

@@ -42,4 +42,10 @@
       background-color: $secondery-color-active;
     }
   }
+
+  @media (min-width: $breakpoints-tablet) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 26px;
+  }
 }
