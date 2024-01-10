@@ -9,6 +9,7 @@
   background-image: url("../../images/cat-in-bag@1x.jpg");
   background-position: 50% 50%;
   background-size: cover;
+  padding-top: 13px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../images/cat-in-bag@2x.jpg");
@@ -29,6 +30,9 @@
     padding: 0;
     flex-direction: column;
     justify-content: center;
+    padding-top: 15px;
+    padding-left: 3px;
+    background-position-x: 89%;
   }
 
   &::after {
@@ -56,11 +60,11 @@
     margin-bottom: 48px;
 
     @media (min-width: $breakpoints-tablet) {
-      margin-bottom: 0;
+      margin-bottom: 20px;
     }
 
     @media (min-width: $breakpoints-desktop) {
-      margin-bottom: 46px;
+      margin-bottom: 49px;
     }
   }
 }
@@ -78,9 +82,13 @@
 
   @media (min-width: $breakpoints-tablet) {
     text-align: left;
+    margin-bottom: 14px;
+    margin-right: 2px;
   }
 
   @media (min-width: $breakpoints-desktop) {
     text-align: center;
+    margin-bottom: 0;
+    margin-right: 0;
   }
 }

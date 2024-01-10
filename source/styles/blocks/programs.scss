@@ -5,6 +5,10 @@
   @media (min-width: $breakpoints-tablet) {
     padding-top: 0;
   }
+
+  @media (min-width: $breakpoints-desktop) {
+    padding-top: 82px;
+  }
 }
 
 .programs__list {
@@ -21,10 +25,14 @@
 .programs__item {
   position: relative;
   background-color: $secondery-color;
-  padding: 30px 33px 18px 20px;
+  padding: 30px 20px 17px;
 
   &:not(:last-child) {
     margin-bottom: 20px;
+
+    @media (min-width: $breakpoints-tablet) {
+      margin-bottom: 30px;
+    }
 
     @media (min-width: $breakpoints-desktop) {
       margin-bottom: 0;
@@ -36,7 +44,7 @@
   }
 
   @media (min-width: $breakpoints-desktop) {
-    padding: 77px 52px 55px;
+    padding: 77px 52px 59px;
     width: 100%;
   }
 
@@ -59,6 +67,14 @@
       right: 63px;
       width: 200px;
       height: 200px;
+    }
+
+    @media (min-width: $breakpoints-desktop) {
+      top: 47px;
+      left: 52px;
+      right: initial;
+      width: 100px;
+      height: 100px;
     }
   }
 
@@ -85,6 +101,14 @@
       width: 140px;
       height: 194px;
     }
+
+    @media (min-width: $breakpoints-desktop) {
+      top: 41px;
+      left: 67px;
+      right: initial;
+      width: 70px;
+      height: 97px;
+    }
   }
 
   &--pro::after {
@@ -101,6 +125,14 @@
       right: 29px;
       width: 268px;
       height: 112px;
+    }
+
+    @media (min-width: $breakpoints-desktop) {
+      top: 67px;
+      left: 33px;
+      right: initial;
+      width: 134px;
+      height: 56px;
     }
   }
 }
@@ -121,6 +153,10 @@
     line-height: 36px;
     padding-left: 0;
   }
+
+  @media (min-width: $breakpoints-desktop) {
+    padding-left: 162px;
+  }
 }
 
 .programs__desc {
@@ -130,17 +166,23 @@
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
-  margin: 29px 0 19px;
-  padding-bottom: 23px;
+  margin: 29px 0 13px;
+  padding-bottom: 22px;
   border-bottom: 1px solid $spacer-line-color;
 
   @media (min-width: $breakpoints-tablet) {
+    color: $primary-text-color;
     font-size: 16px;
     line-height: 24px;
     max-width: 340px;
     margin: 24px 0 52px;
     border-bottom: 0;
     padding-bottom: 0;
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    margin: 73px 0 27px;
+    max-width: 100%;
   }
 }
 

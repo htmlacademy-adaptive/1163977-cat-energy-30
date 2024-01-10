@@ -1,9 +1,5 @@
-/*
-.page-headline {}
-.page-headline__title {}
-*/
 .page-headline__subtitle {
-  color: #000000;
+  color: $primary-text-color;
   font-family: $primary-font;
   font-size: 14px;
   font-style: normal;

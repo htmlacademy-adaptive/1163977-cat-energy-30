@@ -29,6 +29,7 @@
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   margin: 0 16px;
+  padding-bottom: 3px;
 
   @media (min-width: $breakpoints-tablet) {
     width: 162px;
@@ -49,7 +50,7 @@
 
 .stats__decription {
   position: absolute;
-  bottom: -15px;
+  bottom: -16px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -73,6 +74,10 @@
     padding: 0 8px;
     background-color: $white;
   }
+
+  @media (min-width: $breakpoints-desktop) {
+    background: #eaeaea;
+  }
 }
 
 .stats__result {
@@ -93,7 +98,7 @@
   }
 
   @media (min-width: $breakpoints-desktop) {
-    margin-top: 55px;
+    margin-top: 60px;
   }
 }
 

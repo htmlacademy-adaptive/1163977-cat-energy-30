@@ -34,7 +34,7 @@
     flex-direction: row;
 
     &__item {
-      margin-right: 33px;
+      margin-right: 34px;
 
       &:last-child {
         margin-right: 0;
@@ -47,8 +47,8 @@
   color: $primary-text-color;
   font-family: $primary-font;
   font-size: 20px;
-  font-weight: 400;
   line-height: 20px;
+  font-weight: 400;
   text-transform: uppercase;
 
   @media (max-width: $breakpoints-mobile-max) {
@@ -59,15 +59,40 @@
   }
 
   @media (min-width: $breakpoints-tablet) {
+    font-size: 18px;
+    line-height: 24px;
+
     .main-menu__item & {
       @include standart-transition;
-      padding-bottom: 10px;
-      border-bottom: 2px solid transparent;
+      padding-bottom: 8px;
+      box-shadow: 0 2px 0 0 transparent;
     }
 
     .main-menu__item--current &,
     .main-menu__item &:hover {
-      border-color: $primary-color;
+      box-shadow: 0 2px 0 0 $primary-color;
+    }
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    font-size: 20px;
+    line-height: 20px;
+
+    .main-menu__item & {
+      padding-bottom: 6px;
+    }
+  }
+}
+
+@media (min-width: $breakpoints-desktop) {
+  .main-menu--home-page {
+    .main-menu__link {
+      color: $white;
+    }
+
+    .main-menu__item--current .main-menu__link,
+    .main-menu__item .main-menu__link:hover {
+      box-shadow: 0 2px 0 0 $white;
     }
   }
 }
