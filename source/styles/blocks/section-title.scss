@@ -59,6 +59,10 @@
     br {
       display: none;
     }
+
+    &--form {
+      padding-left: 0;
+    }
   }
 
   @media (min-width: $breakpoints-desktop) {

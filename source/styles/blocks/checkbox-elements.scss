@@ -11,16 +11,15 @@
 }
 
 .checkbox-elements__item {
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 
   @media (min-width: $breakpoints-tablet) {
-    width: 50%;
-    padding-right: 30px;
+    width: 284px;
     margin-bottom: 32px;
   }
 
   @media (min-width: $breakpoints-desktop) {
-    width: 240px;
+    width: 245px;
     padding-right: 0;
     margin-bottom: 0;
   }

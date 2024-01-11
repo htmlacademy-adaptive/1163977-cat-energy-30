@@ -1,4 +1,5 @@
-/*
-.radio-elements {}
-.radio-elements__item {}
-*/
+.radio-elements__item {
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}

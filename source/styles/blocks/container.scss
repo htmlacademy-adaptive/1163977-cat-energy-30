@@ -17,6 +17,20 @@
   }
 
   &--form {
+    padding-left: 0;
+    padding-right: 0;
+
+    @media (min-width: $breakpoints-tablet) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @media (min-width: $breakpoints-tablet) and (max-width: $breakpoints-tablet-max) {
+      max-width: 628px;
+    }
+  }
+
+  &--form-headline {
     @media (min-width: $breakpoints-tablet) and (max-width: $breakpoints-tablet-max) {
       max-width: 628px;
     }

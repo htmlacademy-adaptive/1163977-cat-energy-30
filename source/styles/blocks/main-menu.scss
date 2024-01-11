@@ -68,9 +68,18 @@
       box-shadow: 0 2px 0 0 transparent;
     }
 
-    .main-menu__item--current &,
-    .main-menu__item &:hover {
+    .main-menu__item--current & {
       box-shadow: 0 2px 0 0 $primary-color;
+    }
+
+    .main-menu__item &:hover {
+      opacity: 0.6;
+      box-shadow: 0 2px 0 0 transparent;
+    }
+
+    .main-menu__item &:active {
+      opacity: 0.3;
+      box-shadow: 0 2px 0 0 transparent;
     }
   }
 
