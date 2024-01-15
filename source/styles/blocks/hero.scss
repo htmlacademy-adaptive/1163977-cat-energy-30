@@ -52,14 +52,14 @@
       background-position: 0 0;
       background-size: auto 100%;
     }
-  }
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../../images/index-bg-header@2x.webp");
-  }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/index-bg-header@2x.webp");
+    }
 
-  @media (min-width: $breakpoints-tablet) {
-    background: $white;
+    @media (min-width: $breakpoints-tablet) {
+      background: $white;
+    }
   }
 
   @media (min-width: $breakpoints-desktop) {
