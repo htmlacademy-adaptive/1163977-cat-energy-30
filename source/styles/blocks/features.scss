@@ -4,8 +4,13 @@
 
   @media (min-width: $breakpoints-tablet) {
     padding-top: 45px;
-    padding-bottom: 47px;
+    padding-bottom: 0;
     border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    padding-top: 71px;
+    border-bottom: none;
   }
 }
 
@@ -38,6 +43,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: -31px;
   }
 }
 
@@ -52,21 +58,20 @@
   padding-top: 2px;
   min-height: 60px;
 
-  &:not(:last-child) {
-    margin-bottom: 20px;
+  @media (max-width: $breakpoints-mobile-max) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
 
   @media (min-width: $breakpoints-tablet) {
     counter-increment: process-list;
     font-size: 16px;
     line-height: 24px;
-    height: 280px;
+    height: 226px;
     width: 245px;
     margin-right: 79px;
-
-    &:not(:last-child) {
-      margin-bottom: 44px;
-    }
+    margin-bottom: 91px;
 
     &::after {
       content: counter(process-list);
@@ -80,11 +85,24 @@
       font-weight: 400;
       color: $secondery-color;
     }
+
+    &:nth-child(1)::after {
+      right: 20px;
+    }
+
+    &:nth-child(4)::after {
+      right: -4px;
+    }
   }
 
   @media (min-width: $breakpoints-desktop) {
-    width: 250px;
+    width: 245px;
     margin-right: 0;
+    margin-bottom: 69px;
+
+    &:nth-child(3)::after {
+      right: -2px;
+    }
   }
 
   &::before {
@@ -109,21 +127,21 @@
 
   &:nth-child(1)::before {
     background-image: url("../../images/icons/stack.svg#benefit");
-    background-size: 30px 32px;
+    background-size: 28px 28px;
   }
 
   &:nth-child(2)::before {
     background-image: url("../../images/icons/stack.svg#hot-water");
-    background-size: 26px 29px;
+    background-size: 27px 29px;
   }
 
   &:nth-child(3)::before {
     background-image: url("../../images/icons/stack.svg#fork-knife");
-    background-size: 25px 30px;
+    background-size: 26px 30px;
   }
 
   &:nth-child(4)::before {
     background-image: url("../../images/icons/stack.svg#watch");
-    background-size: 26px 31px;
+    background-size: 27px 31px;
   }
 }

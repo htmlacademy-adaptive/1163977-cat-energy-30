@@ -2,8 +2,12 @@
   background-color: $secondery-color;
   padding-bottom: 20px;
 
+  @media (min-width: $breakpoints-tablet) {
+    padding: 55px 0;
+  }
+
   @media (min-width: $breakpoints-desktop) {
-    padding: 66px 0;
+    padding: 65px 0;
   }
 }
 
@@ -11,7 +15,7 @@
   @include margin-wrapper;
   padding-top: 40px;
 
-  @media (min-width: $breakpoints-desktop) {
+  @media (min-width: $breakpoints-tablet) {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,19 +24,19 @@
 }
 
 .page-footer__logo {
-  margin: 0 auto 20px;
+  margin: 0 auto 18px;
 
-  @media (min-width: $breakpoints-desktop) {
+  @media (min-width: $breakpoints-tablet) {
     margin: 0;
   }
 }
 
 .page-footer__social,
 .page-footer__copyright {
-  padding: 20px 0;
+  padding: 20px 0 19px;
   border-top: 1px solid $spacer-line-color;
 
-  @media (min-width: $breakpoints-desktop) {
+  @media (min-width: $breakpoints-tablet) {
     padding: 0;
     border: 0;
   }

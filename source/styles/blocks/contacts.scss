@@ -1,10 +1,42 @@
-/*
-.contacts {}
-.contacts__wrapper {}
-.contacts__container {}
-*/
-.contacts__map iframe {
+.contacts {
+  background-color: $secondery-color;
+
+  &--home-page {
+    background-color: $white;
+  }
+}
+
+.contacts__map {
+  height: 362px;
+  background-image: url("../../images/map-placeholder-mobile@1x.webp");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/map-placeholder-mobile@2x.webp");
+  }
+
   @media (min-width: $breakpoints-tablet) {
     height: 400px;
+    background-image: url("../../images/map-placeholder-tablet@1x.webp");
+
+    iframe {
+      height: 400px;
+    }
+  }
+
+  @media (min-width: $breakpoints-tablet) and (min-resolution: 2dppx) {
+    background-image: url("../../images/map-placeholder-tablet@2x.webp");
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    background-color: #f2f2f2;
+    background-image: url("../../images/map-placeholder-desktop@1x.webp");
+    background-size: contain;
+  }
+
+  @media (min-width: $breakpoints-desktop) and (min-resolution: 2dppx) {
+    background-image: url("../../images/map-placeholder-desktop@2x.webp");
   }
 }

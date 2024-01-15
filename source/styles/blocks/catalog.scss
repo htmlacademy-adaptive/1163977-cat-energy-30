@@ -1,8 +1,10 @@
-/*
-.catalog {}
-*/
 .catalog__wrapper {
   @include margin-wrapper;
+  margin: 0 -20px;
+
+  @media (min-width: $breakpoints-tablet) {
+    margin-top: 84px;
+  }
 }
 
 .catalog__list {

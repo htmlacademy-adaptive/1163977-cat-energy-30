@@ -1,6 +1,16 @@
 .section-title {
+  font-family: $primary-font;
+  color: $primary-text-color;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
   position: relative;
   width: 100%;
+
+  @media (min-width: $breakpoints-tablet) {
+    font-size: 36px;
+    line-height: 38px;
+  }
 
   &::before,
   &::after {
@@ -12,6 +22,14 @@
     width: 100vw;
     height: 2px;
     background-color: $primary-color;
+
+    @media (min-width: $breakpoints-tablet) {
+      top: 23px;
+    }
+
+    @media (min-width: $breakpoints-desktop) {
+      top: 24px;
+    }
   }
 
   &::before {
@@ -31,18 +49,23 @@
   position: relative;
   z-index: 2;
   display: inline-block;
-  color: $primary-text-color;
-  font-family: $primary-font;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
   background-color: $white;
   padding-right: 20px;
 
   @media (min-width: $breakpoints-tablet) {
+    padding-left: 10px;
+    padding-right: 40px;
+
     br {
       display: none;
     }
+
+    &--form {
+      padding-left: 0;
+    }
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    padding-left: 0;
   }
 }

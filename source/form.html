@@ -48,12 +48,14 @@
   </header>
 
   <main class="page__main">
-    <div class="container container--form">
+    <div class="container container--form-headline">
       <div class="page__headline page-headline">
         <h1 class="page-headline__title page-title">Подбор программы</h1>
         <p class="page-headline__subtitle">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
       </div>
+    </div>
 
+    <div class="container container--form">
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="form__fieldset form__fieldset--info-cat">
           <legend class="visually-hidden">Информация о коте</legend>
@@ -90,7 +92,7 @@
         </fieldset>
 
         <fieldset class="form__fieldset form__fieldset--owner">
-          <legend class="form__legend section-title"><span class="section-title__inner">Контактные данные <br>(владельца кота)</span></legend>
+          <legend class="form__legend section-title"><span class="section-title__inner section-title__inner--form">Контактные данные <br>(владельца кота)</span></legend>
           <div class="form__field">
             <input class="form__control form__control--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
             <label class="form__label form__label--email" for="email">E-mail:*</label>
@@ -102,12 +104,12 @@
         </fieldset>
 
         <fieldset class="form__fieldset form__fieldset--comments">
-          <legend class="form__legend section-title"><span class="section-title__inner">Комментарий</span></legend>
+          <legend class="form__legend section-title"><span class="section-title__inner section-title__inner--form">Комментарий</span></legend>
           <textarea class="form__control form__control--textarea" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
         <fieldset class="form__fieldset form__fieldset--extra">
-          <legend class="form__legend section-title"><span class="section-title__inner">Дополнительно</span></legend>
+          <legend class="form__legend section-title"><span class="section-title__inner section-title__inner--form">Дополнительно</span></legend>
           <div class="form__checkbox-list checkbox-elements">
             <div class="checkbox-elements__item">
               <input class="form__control form__control--checkbox" type="checkbox" name="sweetener" id="sweetener" value="sweetener" checked>
@@ -130,7 +132,7 @@
 
         <div class="form__submit-wrapper">
           <button class="form__submit button button--primary" type="submit">Отправить заявку</button>
-          <p class="form__notation">* — Обязательные поля</p>
+          <p class="form__notation">* &ndash; Обязательные поля</p>
         </div>
       </form>
     </div>
@@ -140,7 +142,7 @@
         <h2 class="visually-hidden">Контакты</h2>
         <div class="container">
           <div class="contacts-detail">
-            <h3 class="contacts-detail__title">Приглашаем к сотрудничеству дилеров!</h3>
+            <h3 class="contacts-detail__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
             <p class="contacts-detail__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts-detail__address-city">Санкт-Петербург</span></p>
           </div>
         </div>
@@ -155,7 +157,7 @@
     <div class="container">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo footer-logo" href="/">
-          <img class="footer-logo__image-text" src="images/logo-text.svg" width="128" height="24" alt="Кэт энерджи">
+          <img class="footer-logo__image-text" src="images/logo-text.svg" width="128" height="25" alt="Кэт энерджи">
         </a>
 
         <ul class="page-footer__social social">
@@ -175,6 +177,7 @@
       </div>
     </div>
   </footer>
+
   <script>
     const $input = document.querySelectorAll('input');
     const $form = document.querySelector('.form');

@@ -1,13 +1,13 @@
 .social {
   @include list-style-none;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0 19px;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  @media (min-width: $breakpoints-desktop) {
+  @media (min-width: $breakpoints-tablet) {
     padding: 0;
+    margin-left: 37px;
   }
 }
 

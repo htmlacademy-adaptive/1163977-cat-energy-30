@@ -3,8 +3,8 @@
   flex-direction: column;
 
   @media (max-width: $breakpoints-mobile-max) {
-    padding-top: 20px;
-    padding-bottom: 25px;
+    padding-top: 13px;
+    padding-bottom: 18px;
     border-bottom: 1px solid #ebebeb;
 
     &:first-child {
@@ -23,36 +23,91 @@
       margin-top: -1px;
     }
   }
+
+  @media (min-width: $breakpoints-desktop) {
+    align-items: center;
+    border-right: 0;
+    border-left: 0;
+    padding: 15px 0 16px;
+  }
 }
-/*
-.extra-product-card__link-title {}
-*/
+
+.extra-product-card__link-title {
+  @media (min-width: $breakpoints-desktop) {
+    flex-grow: 1;
+  }
+}
+
 .extra-product-card__title {
   color: #222222;
   font-family: $primary-font;
   font-size: 16px;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 1;
   text-transform: uppercase;
+  margin: 0 0 13px;
+
+  @media (min-width: $breakpoints-tablet) {
+    font-size: 20px;
+    margin: 0;
+  }
 }
-/*
-.extra-product-card__info {}
-*/
+
+.extra-product-card__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  @media (min-width: $breakpoints-tablet) {
+    margin: 0;
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    width: 304px;
+    margin-right: 20px;
+  }
+}
+
 .extra-product-card__size,
 .extra-product-card__price {
   color: $secondery-text-color;
   font-family: $secondery-font;
   font-size: 14px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 1;
+
+  @media (min-width: $breakpoints-tablet) {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 .extra-product-card__price {
   text-align: right;
+
+  @media (min-width: $breakpoints-tablet) {
+    width: 92px;
+    padding-right: 2px;
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    text-align: left;
+    width: 62px;
+  }
 }
 
 .extra-product-card__button {
   @media (min-width: $breakpoints-tablet) {
     width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 18px;
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    max-width: 244px;
+    margin: 0;
   }
 }

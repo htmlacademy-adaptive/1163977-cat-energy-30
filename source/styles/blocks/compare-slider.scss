@@ -1,19 +1,26 @@
 .compare-slider {
   position: relative;
   width: 280px;
-  height: 256px;
-  margin: 20px auto 40px;
+  height: 296px;
+  margin: 20px auto 0;
   line-height: 0;
 
   @media (min-width: $breakpoints-tablet) {
     width: 560px;
-    height: 512px;
-    margin: 104px auto 101px;
+    height: 613px;
+    margin: 104px auto 0;
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    height: 599px;
+    margin: 0;
   }
 }
 
 .compare-slider__slide {
+  display: flex;
   height: 100%;
+  width: 50%;
   overflow: hidden;
   background-color: #eaeaea;
 
@@ -22,17 +29,16 @@
   }
 
   &--before {
-    width: 50%;
     position: relative;
     z-index: 2;
   }
 
   &--after {
-    width: 100%;
     position: absolute;
     z-index: 1;
     top: 0;
     right: 0;
+    justify-content: flex-end;
   }
 }
 
@@ -45,19 +51,48 @@
 }
 
 .compare-slider__control {
+  @include standart-transition;
+  cursor: pointer;
   position: absolute;
   top: 0;
   left: 50%;
   z-index: 3;
   transform: translateX(-50%);
-  height: 100%;
+  height: calc(100% - 40px);
   width: 4px;
-  margin-left: -2px;
   background-color: $special-dark-grey-2;
   border-radius: 2px;
+
+  @media (min-width: $breakpoints-tablet) {
+    height: calc(100% - 100px);
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    height: calc(100% - 86px);
+  }
+
+  &:hover,
+  &:active {
+    background-color: $primary-color;
+
+    .compare-slider__control-icon {
+      border-color: $primary-color;
+    }
+
+    .compare-slider__control-icon::before,
+    .compare-slider__control-icon::after {
+      border-top-color: $primary-color;
+      border-left-color: $primary-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .compare-slider__control-icon {
+  @include standart-transition;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -70,6 +105,7 @@
 
   &::before,
   &::after {
+    @include standart-transition;
     content: "";
     position: absolute;
     top: 50%;
