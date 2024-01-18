@@ -56,10 +56,6 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/index-bg-header@2x.webp");
     }
-
-    @media (min-width: $breakpoints-tablet) {
-      background: $white;
-    }
   }
 
   @media (min-width: $breakpoints-desktop) {
@@ -75,14 +71,15 @@
 
   @media (min-width: $breakpoints-tablet) {
     align-items: flex-start;
+    max-width: 768px;
     padding: 40px 30px 526px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: $breakpoints-desktop) {
     position: relative;
     max-width: 1220px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 110px 0 184px;
   }
 }

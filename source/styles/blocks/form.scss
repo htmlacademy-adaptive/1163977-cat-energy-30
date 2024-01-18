@@ -431,6 +431,10 @@
       height: 18px;
     }
   }
+
+  &:disabled ~ .form__label--radio {
+    opacity: 0.3;
+  }
 }
 
 .form__control--checkbox {
@@ -461,6 +465,10 @@
       width: 13px;
       height: 22px;
     }
+  }
+
+  &:disabled ~ .form__label--checkbox {
+    opacity: 0.3;
   }
 }
 

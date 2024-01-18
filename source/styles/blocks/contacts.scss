@@ -20,10 +20,6 @@
   @media (min-width: $breakpoints-tablet) {
     height: 400px;
     background-image: url("../../images/map-placeholder-tablet@1x.webp");
-
-    iframe {
-      height: 400px;
-    }
   }
 
   @media (min-width: $breakpoints-tablet) and (min-resolution: 2dppx) {
@@ -38,5 +34,12 @@
 
   @media (min-width: $breakpoints-desktop) and (min-resolution: 2dppx) {
     background-image: url("../../images/map-placeholder-desktop@2x.webp");
+  }
+
+  iframe {
+    display: block;
+    border: none;
+    width: 100%;
+    height: 100%;
   }
 }
