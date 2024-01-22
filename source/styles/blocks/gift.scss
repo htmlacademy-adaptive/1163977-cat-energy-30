@@ -6,13 +6,13 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url("../../images/cat-in-bag@1x.jpg");
+  background-image: url("../../images/cat-in-bag-mobile@1x.webp");
   background-position: 50% 50%;
   background-size: cover;
   padding-top: 13px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../images/cat-in-bag@2x.jpg");
+    background-image: url("../../images/cat-in-bag-mobile@2x.webp");
   }
 
   @media (min-width: $breakpoints-tablet) {
@@ -21,7 +21,11 @@
     justify-content: space-between;
     padding-left: 79px;
     padding-right: 125px;
-    background-position-y: 60%;
+    background-image: url("../../images/cat-in-bag-tablet@1x.webp");
+  }
+
+  @media (min-width: $breakpoints-tablet) and (min-resolution: 2dppx) {
+    background-image: url("../../images/cat-in-bag-tablet@2x.webp");
   }
 
   @media (min-width: $breakpoints-desktop) {
@@ -32,7 +36,11 @@
     justify-content: center;
     padding-top: 15px;
     padding-left: 3px;
-    background-position-x: 89%;
+    background-image: url("../../images/cat-in-bag-desktop@1x.webp");
+  }
+
+  @media (min-width: $breakpoints-desktop) and (min-resolution: 2dppx) {
+    background-image: url("../../images/cat-in-bag-desktop@2x.webp");
   }
 
   &::after {

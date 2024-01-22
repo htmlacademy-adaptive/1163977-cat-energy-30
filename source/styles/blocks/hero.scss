@@ -35,10 +35,14 @@
     width: 100%;
     height: 100%;
     background-color: #3f3e43;
-    background-image: url("../../images/index-bg-header@1x.webp");
+    background-image: url("../../images/index-bg-header-mobile@1xwebp");
     background-repeat: no-repeat;
-    background-position: 63% -37px;
-    background-size: auto 378px;
+    background-position: 50% 0;
+    background-size: auto 303px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/index-bg-header-mobile@2x.webp");
+    }
 
     @media (min-width: $breakpoints-tablet) {
       display: none;
@@ -49,11 +53,12 @@
       z-index: 0;
       display: block;
       width: 50%;
+      background-image: url("../../images/index-bg-header@2x.webp");
       background-position: 0 0;
       background-size: auto 100%;
     }
 
-    @media (min-resolution: 2dppx) {
+    @media (min-width: $breakpoints-desktop) and (min-resolution: 2dppx) {
       background-image: url("../../images/index-bg-header@2x.webp");
     }
   }
