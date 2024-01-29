@@ -2,17 +2,15 @@
   @include list-style-none;
   padding: 20px 0 19px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 12px 24px;
 
   @media (min-width: $breakpoints-tablet) {
     padding: 0;
     margin-left: 37px;
   }
-}
-
-.social__item:not(:last-child) {
-  margin-right: 24px;
 }
 
 .social__link {

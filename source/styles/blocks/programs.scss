@@ -141,7 +141,6 @@
   color: $primary-text-color;
   font-family: $primary-font;
   font-size: 24px;
-  font-style: normal;
   font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
@@ -163,10 +162,9 @@
   color: $secondery-text-color;
   font-family: $secondery-font;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 18px;
-  margin: 29px 0 13px;
+  margin: 29px 0 16px;
   padding-bottom: 22px;
   border-bottom: 1px solid $spacer-line-color;
 
@@ -193,7 +191,6 @@
   color: $primary-text-color;
   font-family: $primary-font;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
@@ -217,6 +214,8 @@
     background-image: url("../../images/icons/stack.svg#icon-arrow");
     background-position-x: -8px;
     background-repeat: no-repeat;
+    flex-grow: 0;
+    flex-shrink: 0;
 
     @media (min-width: $breakpoints-tablet) {
       margin-left: 27px;

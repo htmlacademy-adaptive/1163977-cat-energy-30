@@ -24,7 +24,6 @@
         <img class="logo__image-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип">
       </picture>
       <img class="logo__image-text" src="images/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
-      <span class="logo__spaser"></span>
     </a>
 
     <nav class="main-nav">
@@ -57,7 +56,7 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="images/hero-image-desktop@1x.webp 1x, images/hero-image-desktop@2x.webp 2x" width="552" height="499" type="image/webp">
           <source media="(min-width: 768px)" srcset="images/hero-image-tablet@1x.webp 1x, images/hero-image-tablet@2x.webp 2x" width="709" height="609" type="image/webp">
-          <source srcset="images/hero-image-mobile@1x.webp 1x, images/hero-image-mobile@2x.webp 2x" width="280" height="270" type="image/webp">
+          <source media="(max-width: 767px)" srcset="images/hero-image-mobile@1x.webp 1x, images/hero-image-mobile@2x.webp 2x" width="280" height="270" type="image/webp">
           <source media="(min-width: 1440px)" srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x" width="552" height="499" type="image/png">
           <source media="(min-width: 768px)" srcset="images/hero-image-tablet@1x.jpg 1x, images/hero-image-tablet@2x.jpg 2x" width="709" height="609" type="image/jpeg">
           <img class="hero__image" src="images/hero-image-mobile@1x.png" srcset="images/hero-image-mobile@2x.png 2x" width="280" height="270" alt="Изображение товара">
@@ -91,10 +90,10 @@
         <div class="features__wrapper">
           <h2 class="features__title">Как это работает</h2>
           <ol class="features__list">
-            <li class="features__item">Функциональное питание содержит только полезные питательные вещества.</li>
-            <li class="features__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-            <li class="features__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
-            <li class="features__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</li>
+            <li class="features__item features__item--benefit">Функциональное питание содержит только полезные питательные вещества.</li>
+            <li class="features__item features__item--hot-water">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+            <li class="features__item features__item--fork-knife">Замените один-два приема обычной еды на наше функциональное питание.</li>
+            <li class="features__item features__item--watch">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</li>
           </ol>
         </div>
       </div>
@@ -119,7 +118,7 @@
             <div class="compare-slider__slide compare-slider__slide--before">
               <picture>
                 <source media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.webp 1x, images/cat-before-tablet@2x.webp 2x" width="560" height="512" type="image/webp">
-                <source srcset="images/cat-before-mobile@1x.webp 1x, images/cat-before-mobile@2x.webp 2x" width="280" height="256" type="image/webp">
+                <source media="(max-width: 767px)" srcset="images/cat-before-mobile@1x.webp 1x, images/cat-before-mobile@2x.webp 2x" width="280" height="256" type="image/webp">
                 <source media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560" height="512" type="image/png">
                 <img class="compare-slider__image" loading="lazy" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="До">
               </picture>
@@ -127,7 +126,7 @@
             <div class="compare-slider__slide compare-slider__slide--after">
               <picture>
                 <source media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.webp 1x, images/cat-after-tablet@2x.webp 2x" width="560" height="512" type="image/webp">
-                <source srcset="images/cat-after-mobile@1x.webp 1x, images/cat-after-mobile@2x.webp 2x" width="280" height="256" type="image/webp">
+                <source media="(max-width: 767px)" srcset="images/cat-after-mobile@1x.webp 1x, images/cat-after-mobile@2x.webp 2x" width="280" height="256" type="image/webp">
                 <source media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560" height="512" type="image/png">
                 <img class="compare-slider__image" loading="lazy" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="После">
               </picture>
@@ -172,7 +171,7 @@
         </ul>
 
         <div class="page-footer__copyright">
-          <a class="copyright" href="#">
+          <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener noreferrer">
             <span class="copyright__text">HTML Academy</span>
             <svg class="copyright__icon" width="27" height="34">
               <use href="images/icons/stack.svg#logo-academy"></use>

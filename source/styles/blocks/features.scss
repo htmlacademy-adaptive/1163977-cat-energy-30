@@ -22,7 +22,6 @@
   color: $primary-text-color;
   font-family: $primary-font;
   font-size: 36px;
-  font-style: normal;
   font-weight: 400;
   line-height: 40px;
   margin: 0 0 40px;
@@ -52,7 +51,6 @@
   color: $special-dark-grey;
   font-family: $secondery-font;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 18px;
   padding-top: 2px;
@@ -125,22 +123,22 @@
     }
   }
 
-  &:nth-child(1)::before {
+  &--benefit::before {
     background-image: url("../../images/icons/stack.svg#benefit");
     background-size: 28px 28px;
   }
 
-  &:nth-child(2)::before {
+  &--hot-water::before {
     background-image: url("../../images/icons/stack.svg#hot-water");
     background-size: 27px 29px;
   }
 
-  &:nth-child(3)::before {
+  &--fork-knife::before {
     background-image: url("../../images/icons/stack.svg#fork-knife");
     background-size: 26px 30px;
   }
 
-  &:nth-child(4)::before {
+  &--watch::before {
     background-image: url("../../images/icons/stack.svg#watch");
     background-size: 27px 31px;
   }
