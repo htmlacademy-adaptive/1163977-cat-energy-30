@@ -17,13 +17,13 @@ const $form = document.querySelector('.form');
 const $input = document.querySelectorAll('input');
 const $button = document.querySelector('.button');
 
-$button.addEventListener('click', () => validate());
 const validate = () => {
   if (!$form.checkValidity()) {
-    $input.forEach(input => {
+    $input.forEach((input) => {
       if (input.hasAttribute('required')) {
         input.classList.add('form__control--invalid');
       }
     });
   }
-}
+};
+$button.addEventListener('click', () => validate());

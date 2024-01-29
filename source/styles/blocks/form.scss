@@ -298,13 +298,13 @@
   font-size: inherit;
   line-height: inherit;
   margin: 0;
+  flex-grow: 1;
 
   &--text,
   &--number,
   &--email,
   &--tel,
   &--textarea {
-    width: 100%;
     color: $secondery-text-color;
     font-family: $primary-font;
     font-size: 16px;
@@ -367,6 +367,7 @@
 .form__control--textarea {
   min-height: 150px;
   padding: 14px;
+  width: 100%;
 
   @media (min-width: $breakpoints-tablet) {
     min-height: 175px;
