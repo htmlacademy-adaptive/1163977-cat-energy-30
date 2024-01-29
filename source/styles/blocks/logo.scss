@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-between;
   line-height: 0;
+  flex-shrink: 0;
 
   &:hover,
   &:focus {
@@ -19,17 +20,19 @@
       opacity: 0.6;
     }
   }
-}
 
-.logo__image-text {
-  @media (min-width: $breakpoints-tablet) {
-    display: none;
+  &::after {
+    content: "";
+    display: block;
+    width: 33px;
+
+    @media (min-width: $breakpoints-tablet) {
+      display: none;
+    }
   }
 }
 
-.logo__spaser {
-  width: 33px;
-
+.logo__image-text {
   @media (min-width: $breakpoints-tablet) {
     display: none;
   }

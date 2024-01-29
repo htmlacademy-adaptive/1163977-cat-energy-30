@@ -24,7 +24,6 @@
         <img class="logo__image-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип">
       </picture>
       <img class="logo__image-text" src="images/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
-      <span class="logo__spaser"></span>
     </a>
 
     <nav class="main-nav">
@@ -169,7 +168,7 @@
         </ul>
 
         <div class="page-footer__copyright">
-          <a class="copyright" href="#">
+          <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener noreferrer">
             <span class="copyright__text">HTML Academy</span>
             <svg class="copyright__icon" width="27" height="34">
               <use href="images/icons/stack.svg#logo-academy"></use>
@@ -179,23 +178,6 @@
       </div>
     </div>
   </footer>
-
-  <script>
-    const $input = document.querySelectorAll('input');
-    const $form = document.querySelector('.form');
-    const $button = document.querySelector('.button');
-
-    $button.addEventListener('click', () => validate());
-    const validate = () => {
-      if (!$form.checkValidity()) {
-        $input.forEach(input => {
-          if (input.hasAttribute('required')) {
-            input.classList.add('form__control--invalid');
-          }
-        });
-      }
-    }
-  </script>
 </body>
 
 </html>

@@ -5,19 +5,19 @@
   background-color: transparent;
   border: 0;
   padding: 10px;
+}
 
-  &__line {
-    @include standart-transition;
-    display: block;
-    height: 2px;
-    width: 100%;
-    background-color: $black;
-    margin-top: 2px;
-    margin-bottom: 6px;
+.toggle__line {
+  @include standart-transition;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: $black;
+  margin-top: 2px;
+  margin-bottom: 6px;
 
-    &:last-child {
-      margin-bottom: 4px;
-    }
+  &:last-child {
+    margin-bottom: 4px;
   }
 }
 

@@ -25,6 +25,7 @@
 
 .page-footer__logo {
   margin: 0 auto 18px;
+  flex-shrink: 0;
 
   @media (min-width: $breakpoints-tablet) {
     margin: 0;
