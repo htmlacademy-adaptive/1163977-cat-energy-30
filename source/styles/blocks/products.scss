@@ -1,6 +1,5 @@
 .products {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 
   @media (max-width: $breakpoints-mobile-max) {

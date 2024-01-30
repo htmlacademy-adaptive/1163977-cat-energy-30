@@ -1,25 +1,8 @@
 .main-menu {
-  @include list-style-none;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 
-  @media (max-width: $breakpoints-mobile-max) {
-    @include standart-transition;
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    background-color: $white;
-    transform: translateY(-100%);
-
-    &--open {
-      transform: translateY(0);
-    }
-
-    &--nojs {
-      position: relative;
-    }
-  }
 
   @media (min-width: $breakpoints-tablet) {
     flex-direction: row;
@@ -38,6 +21,7 @@
 }
 
 .main-menu__link {
+  cursor: default;
   position: relative;
   color: $primary-text-color;
   font-family: $primary-font;
@@ -45,6 +29,10 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+
+  &:link {
+    cursor: pointer;
+  }
 
   @media (max-width: $breakpoints-mobile-max) {
     display: block;
@@ -71,11 +59,11 @@
       bottom: -9px;
     }
 
-    .main-menu__item &:hover {
+    .main-menu__item &:link:hover {
       opacity: 0.6;
     }
 
-    .main-menu__item &:active {
+    .main-menu__item &:link:active {
       opacity: 0.3;
     }
   }

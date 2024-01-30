@@ -1,7 +1,5 @@
 .gift {
   position: relative;
-  height: 290px;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,16 +7,17 @@
   background-image: url("../../images/cat-in-bag-mobile@1x.webp");
   background-position: 50% 50%;
   background-size: cover;
-  padding-top: 13px;
+  padding: 30px 15px 15px;
+  gap: 48px 0;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../images/cat-in-bag-mobile@2x.webp");
   }
 
   @media (min-width: $breakpoints-tablet) {
-    height: 200px;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 8px;
     padding-left: 79px;
     padding-right: 125px;
     background-image: url("../../images/cat-in-bag-tablet@1x.webp");
@@ -29,13 +28,10 @@
   }
 
   @media (min-width: $breakpoints-desktop) {
-    width: 245px;
-    height: 288px;
-    padding: 0;
+    padding: 30px 15px 17px 18px;
     flex-direction: column;
     justify-content: center;
-    padding-top: 15px;
-    padding-left: 3px;
+    gap: 40px 0;
     background-image: url("../../images/cat-in-bag-desktop@1x.webp");
   }
 
@@ -65,15 +61,6 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 50%;
-    margin-bottom: 48px;
-
-    @media (min-width: $breakpoints-tablet) {
-      margin-bottom: 20px;
-    }
-
-    @media (min-width: $breakpoints-desktop) {
-      margin-bottom: 49px;
-    }
   }
 }
 
@@ -91,8 +78,7 @@
 
   @media (min-width: $breakpoints-tablet) {
     text-align: left;
-    margin-bottom: 14px;
-    padding-right: 1px;
+    padding-top: 9px;
   }
 
   @media (min-width: $breakpoints-desktop) {

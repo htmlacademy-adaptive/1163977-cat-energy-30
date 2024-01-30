@@ -84,3 +84,20 @@
     align-items: flex-start;
   }
 }
+
+.live-example__compare {
+  width: 280px;
+  height: 296px;
+  margin: 20px auto 0;
+
+  @media (min-width: $breakpoints-tablet) {
+    width: 560px;
+    height: 613px;
+    margin: 104px auto 0;
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    height: 599px;
+    margin: 0;
+  }
+}

@@ -1,20 +1,6 @@
 .compare-slider {
   position: relative;
-  width: 280px;
-  height: 296px;
-  margin: 20px auto 0;
   line-height: 0;
-
-  @media (min-width: $breakpoints-tablet) {
-    width: 560px;
-    height: 613px;
-    margin: 104px auto 0;
-  }
-
-  @media (min-width: $breakpoints-desktop) {
-    height: 599px;
-    margin: 0;
-  }
 }
 
 .compare-slider__slide {
@@ -62,6 +48,8 @@
   width: 4px;
   background-color: $special-dark-grey-2;
   border-radius: 2px;
+  border: 0;
+  padding: 0;
 
   @media (min-width: $breakpoints-tablet) {
     height: calc(100% - 100px);

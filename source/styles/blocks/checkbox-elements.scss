@@ -1,26 +1,26 @@
 .checkbox-elements {
-  @media (min-width: $breakpoints-tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 12px 0;
 
-    @media (min-width: $breakpoints-desktop) {
-      gap: 30px 80px;
-    }
+  @media (min-width: $breakpoints-tablet) {
+    flex-direction: row;
+    gap: 32px 60px;
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    gap: 30px 80px;
   }
 }
 
 .checkbox-elements__item {
-  margin-bottom: 12px;
-
   @media (min-width: $breakpoints-tablet) {
     width: 284px;
-    margin-bottom: 32px;
   }
 
   @media (min-width: $breakpoints-desktop) {
     width: 245px;
     padding-right: 0;
-    margin-bottom: 0;
   }
 }

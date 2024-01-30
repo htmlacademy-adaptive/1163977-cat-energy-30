@@ -6,6 +6,16 @@
   }
 }
 
+.contacts__detail {
+  @include margin-wrapper;
+
+  @media (min-width: $breakpoints-desktop) {
+    position: absolute;
+    top: 95px;
+    width: 565px;
+  }
+}
+
 .contacts__map {
   height: 362px;
   background-image: url("../../images/map-placeholder-mobile@1x.webp");

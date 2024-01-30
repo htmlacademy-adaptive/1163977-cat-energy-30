@@ -1,9 +1,6 @@
 .footer-logo {
   @include standart-transition;
   display: block;
-  width: 128px;
-  height: 25px;
-  margin: 0 auto;
   line-height: 0;
 
   &:hover,

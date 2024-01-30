@@ -4,7 +4,9 @@
     font-weight: $font-weight;
     font-style: $font-style;
     font-display: swap;
-    src: $font-src;
+    src:
+      url("#{$font-src}.woff2") format("woff2"),
+      url("#{$font-src}.woff") format("woff");
   }
 }
 

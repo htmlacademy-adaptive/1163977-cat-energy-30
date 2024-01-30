@@ -107,6 +107,14 @@
   width: 50%;
   text-align: center;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $breakpoints-tablet) {
     width: 100%;
   }
@@ -122,6 +130,16 @@
 
   @media (min-width: $breakpoints-desktop) {
     margin-top: 12px;
+  }
+}
+
+.product-card__link-title {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 

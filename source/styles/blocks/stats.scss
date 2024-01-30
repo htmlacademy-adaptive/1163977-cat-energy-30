@@ -47,7 +47,7 @@
 
 .stats__decription {
   position: absolute;
-  bottom: -16px;
+  top: calc(100% - 8px);
   left: 50%;
   transform: translateX(-51%);
   z-index: 1;
@@ -65,11 +65,13 @@
   @media (min-width: $breakpoints-tablet) {
     font-size: 14px;
     line-height: 14px;
-    white-space: nowrap;
     width: auto;
-    bottom: -7px;
     padding: 0 8px;
     background-color: $white;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $breakpoints-desktop) {
