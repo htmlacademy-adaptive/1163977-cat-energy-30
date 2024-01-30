@@ -12,16 +12,20 @@
   border: 0;
   padding: 10px 15px;
 
+  &:disabled {
+    opacity: 0.3;
+  }
+
   &--primary {
     color: $white;
     background-color: $primary-color;
 
-    &:hover {
+    &:not(:disabled):hover {
       color: $white;
       background-color: $primary-color-active;
     }
 
-    &:active {
+    &:not(:disabled):active {
       color: rgba($white, 0.3);
       background-color: $primary-color-active;
     }
@@ -31,12 +35,12 @@
     color: $special-dark-grey;
     background-color: $secondery-color;
 
-    &:hover {
+    &:not(:disabled):hover {
       color: $special-dark-grey;
       background-color: $secondery-color-active;
     }
 
-    &:active {
+    &:not(:disabled):active {
       color: $special-dark-grey;
       background-color: $secondery-color-active;
     }

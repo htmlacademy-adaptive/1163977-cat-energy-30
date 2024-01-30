@@ -7,6 +7,11 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:hover .copyright__icon,
+  &:focus .copyright__icon {
+    color: $primary-color;
+  }
 }
 
 .copyright__text {
@@ -29,9 +34,4 @@
   height: 34px;
   color: $special-dark-grey-2;
   flex-shrink: 0;
-
-  .copyright:hover &,
-  .copyright:focus & {
-    color: $primary-color;
-  }
 }

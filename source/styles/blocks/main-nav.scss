@@ -25,3 +25,24 @@
     max-width: calc(50% - 30px);
   }
 }
+
+.main-nav__list {
+  @include list-style-none;
+
+  @media (max-width: $breakpoints-mobile-max) {
+    @include standart-transition;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: $white;
+    transform: translateY(-100%);
+
+    &--open {
+      transform: translateY(0);
+    }
+
+    &--nojs {
+      position: relative;
+    }
+  }
+}

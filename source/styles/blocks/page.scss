@@ -3,6 +3,27 @@
   overflow-x: hidden;
 }
 
+.page__header {
+  @media (min-width: $breakpoints-tablet) {
+    width: 100%;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $breakpoints-desktop) {
+    max-width: 1220px;
+
+    &--home-page {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: 10;
+      transform: translateX(-50%);
+    }
+  }
+}
+
 .page__headline {
   @include margin-wrapper;
   margin-top: 27px;

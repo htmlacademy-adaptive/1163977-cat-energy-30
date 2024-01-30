@@ -1,5 +1,4 @@
 .social {
-  @include list-style-none;
   padding: 20px 0 19px;
   display: flex;
   flex-wrap: wrap;
@@ -9,39 +8,41 @@
 
   @media (min-width: $breakpoints-tablet) {
     padding: 0;
-    margin-left: 37px;
   }
 }
 
 .social__link {
-  @include standart-transition;
-  display: block;
-  width: 28px;
-  height: 22px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: $special-dark-grey-2;
+  &::before {
+    @include standart-transition;
+    content: "";
+    display: block;
+    width: 28px;
+    height: 22px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $special-dark-grey-2;
+  }
 
-  &:hover,
-  &:focus {
+  &:hover::before,
+  &:focus::before {
     background-color: $primary-color;
   }
 
-  &:active {
+  &:active::before {
     opacity: 0.3;
     background-color: $primary-color;
   }
 
-  &--vk {
+  &--vk::before {
     mask-image: url("../../images/icons/stack.svg#social-icon-vk");
   }
 
-  &--yt {
+  &--yt::before {
     mask-image: url("../../images/icons/stack.svg#social-icon-yt");
   }
 
-  &--tg {
+  &--tg::before {
     mask-image: url("../../images/icons/stack.svg#social-icon-tg");
   }
 }

@@ -34,7 +34,7 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
-      <ul class="main-nav__list main-menu main-menu--open main-menu--nojs">
+      <ul class="main-nav__list main-nav__list--open main-nav__list--nojs main-menu">
         <li class="main-menu__item">
           <a class="main-menu__link" href="/">Главная</a>
         </li>
@@ -42,7 +42,7 @@
           <a class="main-menu__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="main-menu__item main-menu__item--current">
-          <a class="main-menu__link" href="form.html">Подбор программы</a>
+          <span class="main-menu__link">Подбор программы</span>
         </li>
       </ul>
     </nav>
@@ -52,7 +52,7 @@
     <div class="container container--form-headline">
       <div class="page__headline page-headline">
         <h1 class="page-headline__title page-title">Подбор программы</h1>
-        <p class="page-headline__subtitle">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+        <p class="page-headline__subtitle">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
       </div>
     </div>
 
@@ -86,7 +86,7 @@
               <label class="form__label form__label--radio" for="weight-gain">Набор массы</label>
             </div>
             <div class="radio-elements__item">
-              <input class="form__control form__control--radio" type="radio" name="program" id="advice" value="advice" disabled>
+              <input class="form__control form__control--radio" type="radio" name="program" id="advice" value="advice">
               <label class="form__label form__label--radio" for="advice">Не знаю (Нужен ваш совет)</label>
             </div>
           </div>
@@ -125,7 +125,7 @@
               <label class="form__label form__label--checkbox" for="milk">Молоко</label>
             </div>
             <div class="checkbox-elements__item">
-              <input class="form__control form__control--checkbox" type="checkbox" name="vitamins" id="vitamins" value="vitamins" disabled>
+              <input class="form__control form__control--checkbox" type="checkbox" name="vitamins" id="vitamins" value="vitamins">
               <label class="form__label form__label--checkbox" for="vitamins">Витамины</label>
             </div>
           </div>
@@ -142,7 +142,7 @@
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="container">
-          <div class="contacts-detail">
+          <div class="contacts__detail contacts-detail">
             <h3 class="contacts-detail__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
             <p class="contacts-detail__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts-detail__address-city">Санкт-Петербург</span></p>
           </div>

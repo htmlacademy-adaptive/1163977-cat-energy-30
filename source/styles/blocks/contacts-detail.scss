@@ -1,5 +1,4 @@
 .contacts-detail {
-  @include margin-wrapper;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,9 +10,6 @@
 
   @media (min-width: $breakpoints-desktop) {
     background: $white;
-    position: absolute;
-    top: 95px;
-    width: 565px;
     padding-left: 80px;
     padding-right: 75px;
   }

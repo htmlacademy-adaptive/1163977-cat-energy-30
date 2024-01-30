@@ -24,6 +24,8 @@
 }
 
 .page-footer__logo {
+  width: 128px;
+  height: 25px;
   margin: 0 auto 18px;
   flex-shrink: 0;
 
@@ -40,5 +42,13 @@
   @media (min-width: $breakpoints-tablet) {
     padding: 0;
     border: 0;
+  }
+}
+
+.page-footer__social {
+  @include list-style-none;
+
+  @media (min-width: $breakpoints-tablet) {
+    margin-left: 37px;
   }
 }
